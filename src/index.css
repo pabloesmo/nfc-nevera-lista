@@ -1,0 +1,48 @@
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* CSS Variables — light mode */
+:root {
+  --surface-0: #f7f7f5;
+  --surface-1: #efefed;
+  --surface-2: #ffffff;
+  --text-primary: #1a1a18;
+  --text-secondary: #5f5e5a;
+  --text-muted: #a09f9c;
+  --border: rgba(0,0,0,0.10);
+  --border-strong: rgba(0,0,0,0.18);
+  --radius: 8px;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface-0: #1a1a18;
+    --surface-1: #242422;
+    --surface-2: #2c2c2a;
+    --text-primary: #f0f0ee;
+    --text-secondary: #a09f9c;
+    --text-muted: #66655f;
+    --border: rgba(255,255,255,0.10);
+    --border-strong: rgba(255,255,255,0.18);
+  }
+}
+
+html, body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--surface-0);
+  color: var(--text-primary);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+button { cursor: pointer; }
+input, button { font-family: inherit; }
+a { color: inherit; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 2px; }

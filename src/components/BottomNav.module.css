@@ -1,0 +1,52 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--surface-0, #f8f8f6);
+  border-top: 0.5px solid var(--border);
+  display: flex;
+  max-width: 480px;
+  margin: 0 auto;
+  padding-bottom: env(safe-area-inset-bottom, 0);
+  z-index: 50;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px 8px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  color: var(--text-muted, #aaa);
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  transition: color 0.15s;
+}
+.active { color: #1a7a3c; }
+
+.iconWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  position: absolute;
+  top: -2px;
+  right: -4px;
+  width: 8px;
+  height: 8px;
+  background: #c0392b;
+  border-radius: 50%;
+  border: 2px solid var(--surface-0, #f8f8f6);
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 500;
+}
