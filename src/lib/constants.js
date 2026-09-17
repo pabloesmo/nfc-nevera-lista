@@ -2,7 +2,7 @@ export const MEMBERS = [
   { id: 'papa',    name: 'Papá',    emoji: '👨', color: '#1a5276', bg: '#d6eaf8' },
   { id: 'mama',    name: 'Mamá',    emoji: '👩', color: '#7d3c98', bg: '#e8daef' },
   { id: 'pablo',   name: 'Pablo',   emoji: '🧑', color: '#1a7a3c', bg: '#d5f5e3' },
-  { id: 'hermana', name: 'Hermana', emoji: '👧', color: '#c0392b', bg: '#fadbd8' },
+  { id: 'maria', name: 'María', emoji: '👧', color: '#c0392b', bg: '#fadbd8' },
 ]
 
 export const SUPERMARKETS = [
